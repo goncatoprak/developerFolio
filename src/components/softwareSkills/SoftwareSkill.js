@@ -1,6 +1,16 @@
 import React from "react";
 import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
+import { SiTensorflow } from "react-icons/si";
+import { SiOpencv } from "react-icons/si";
+import { SiPython } from "react-icons/si";
+
+
+const customIcons = {
+  python: <SiPython />,
+  tensorflow: <SiTensorflow />,
+  opencv: <SiOpencv />
+}
 
 export default function SoftwareSkill() {
   return (
@@ -14,7 +24,7 @@ export default function SoftwareSkill() {
                 className="software-skill-inline"
                 name={skills.skillName}
               >
-                <i className={skills.fontAwesomeClassname}></i>
+                {skills.icon ? customIcons[skills.icon] : <i className={skills.fontAwesomeClassname}></i>}
                 <p>{skills.skillName}</p>
               </li>
             );
