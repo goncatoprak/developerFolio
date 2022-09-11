@@ -25,7 +25,8 @@ const greeting = {
   subTitle: emoji(
     `I've received my B.Sc. degree in Electrical and Electronics Engineering in 2019, at Izmir Katip Celebi University. I held an M.Sc. degree in Electrical and Electronics Engineering at Izmir Democracy University and work as an R&D Project Coordinator at AdresGezgini Inc. I have national and EU - Horizon Europe project experience as well as a machine learning, image processing, and deep learning background.`
   ),
-  resumeLink: "https://drive.google.com/file/d/1U3zPyiUZC8f0ADh_5DiqH6urEEMITjgu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink:
+    "https://drive.google.com/file/d/1U3zPyiUZC8f0ADh_5DiqH6urEEMITjgu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -49,7 +50,6 @@ const skillsSection = {
       "⚡ Image processing, Deep learning and Machine learning project development"
     ),
     emoji("⚡ National and international project management")
-
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -93,7 +93,9 @@ const educationInfo = {
       subHeader: "Bachelor of Science: Electrical And Electronics Engineering",
       duration: "September 2015 - June 2019",
       desc: "Took courses about Artificial Intelligence, Machine Learning and Image Processing.",
-      descBullets: ["Bachelor Final Thesis Funded By: The Scientific and Technological Research Council of Turkey (TUBITAK) under 2209B – Bachelor Final Thesis Focused on Industry Program with project number 1139B411801161"]
+      descBullets: [
+        "Bachelor Final Thesis Funded By: The Scientific and Technological Research Council of Turkey (TUBITAK) under 2209B – Bachelor Final Thesis Focused on Industry Program with project number 1139B411801161"
+      ]
     }
   ]
 };
@@ -103,7 +105,7 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-        {
+    {
       Stack: "Python",
       progressPercentage: "85%"
     },
@@ -168,9 +170,9 @@ const workExperiences = {
         "Research on image classification with deep learning.",
         "Conducted machine learning algorithm enhancement, deep learning project development, and literature surveys.",
         "Machine learning and deep learning-based project management.",
-        "Student mentorship for machine learning and deep learning projects.",   
+        "Student mentorship for machine learning and deep learning projects.",
         "Conducted own research in field of expertise image processing with deep learning.",
-        "Worked as member of integrated project team in highly collaborative work environment focused on enhancing AI algorithms",
+        "Worked as member of integrated project team in highly collaborative work environment focused on enhancing AI algorithms"
       ]
     },
     {
@@ -182,7 +184,7 @@ const workExperiences = {
         "Bachelor Final Thesis Funded By: The Scientific and Technological Research Council of Turkey (TUBITAK) under 2209B – Bachelor Final Thesis Focused on Industry Program with project number 1139B411801161: Energy Consumption Estimation and Management with Machine Learning-Based Time Series Analysis.",
         "For the industrial partner of this study, Pikotek Inc., an energy profile that predicts energy consumption for future time periods by monitoring and recording the user's backward energy consumption (kWh) and to guide the user according to this profile is created in Python.",
         "In order to create the module, machine learning-based time series analysis algorithms are enhanced.",
-        "Participated in regular meetings to discuss aspects of research and experiments with the principal investigator and the industry consultant.",   
+        "Participated in regular meetings to discuss aspects of research and experiments with the principal investigator and the industry consultant."
       ]
     }
   ]
@@ -236,7 +238,8 @@ const achievementSection = {
   title: emoji("Publications 📄 "),
   achievementsCards: [
     {
-      title: "Cancerous Lesion Segmentation for Early Detection of Breast Cancer by using CNN",
+      title:
+        "Cancerous Lesion Segmentation for Early Detection of Breast Cancer by using CNN",
       image: require("./assets/images/rg_logo.png"),
       footerLink: [
         {
@@ -246,7 +249,8 @@ const achievementSection = {
       ]
     },
     {
-      title: "Energy Consumption Estimation And Management With Machine Learning Regression Techniques",
+      title:
+        "Energy Consumption Estimation And Management With Machine Learning Regression Techniques",
       image: require("./assets/images/rg_logo.png"),
       footerLink: [
         {
@@ -254,7 +258,7 @@ const achievementSection = {
           url: "https://www.researchgate.net/publication/363452077_Energy_Consumption_Estimation_And_Management_With_Machine_Learning_Regression_Techniques"
         }
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
